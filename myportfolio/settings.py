@@ -10,12 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'your-secret-key'  # Replace with a secure key or environment variable in production
 DEBUG = False  # Turn off debug mode for production
 
-# ALLOWED_HOSTS = ['portfolio-website-djr2.onrender.com', 'localhost', '127.0.0.1']
-ALLOWED_HOSTS = [
-    'portfolio-website-djr2.onrender.com',  # ✅ this must exactly match your Render URL
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['*']
 
 # Installed apps
 INSTALLED_APPS = [
@@ -97,10 +92,10 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "portfolio/static"]  # project-level static files
 STATIC_ROOT = BASE_DIR / "staticfiles"              # where collectstatic dumps files
 
-# WhiteNoise compression and cache-busting
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# # WhiteNoise compression and cache-busting
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Auto primary key
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-print("ALLOWED_HOSTS currently is: ", ALLOWED_HOSTS)
+# print("ALLOWED_HOSTS currently is: ", ALLOWED_HOSTS)
