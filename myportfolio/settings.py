@@ -102,3 +102,5 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Auto primary key
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+print("ALLOWED_HOSTS currently is: ", ALLOWED_HOSTS)
