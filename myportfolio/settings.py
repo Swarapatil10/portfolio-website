@@ -10,7 +10,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'your-secret-key'  # Replace with a secure key or environment variable in production
 DEBUG = False  # Turn off debug mode for production
 
-ALLOWED_HOSTS = ['portfolio-website-djr2.onrender.com', 'localhost', '127.0.0.1']
+# ALLOWED_HOSTS = ['portfolio-website-djr2.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'portfolio-website-djr2.onrender.com',  # ✅ this must exactly match your Render URL
+    'localhost',
+    '127.0.0.1'
+]
 
 # Installed apps
 INSTALLED_APPS = [
